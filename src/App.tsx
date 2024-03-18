@@ -60,7 +60,7 @@ function App() {
     }
   }
 
-  const matchDrawn = gameBoard.length === 9 && !winner;
+  const matchDrawn = gameTurns.length === 9 && !winner;
 
   function handleActivePlayer(rowIdx: number, colIdx: number) {
     setGameTurns((prevTurns) => {
